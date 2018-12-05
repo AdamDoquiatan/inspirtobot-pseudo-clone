@@ -1,9 +1,17 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'InspiroKey'
+            keyPassword 'raccoon'
+            storeFile file('C:/Users/adamd/Desktop/InspiroKeyStore.jks')
+            storePassword 'raccoon'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.adamd.downloadingimages"
+        applicationId "com.adamdproject.adamd.downloadingimages"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
@@ -14,12 +22,14 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            signingConfig signingConfigs.config
         }
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'

@@ -1,4 +1,4 @@
-package com.example.adamd.downloadingimages;
+package com.adamdproject.adamd.downloadingimages;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.adamd.downloadingimages", appContext.getPackageName());
+        assertEquals("com.adamdproject.adamd.downloadingimages", appContext.getPackageName());
     }
 }

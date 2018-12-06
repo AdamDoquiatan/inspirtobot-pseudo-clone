@@ -1,4 +1,4 @@
-package com.example.adamd.downloadingimages;
+package com.adamdproject.adamd.downloadingimages;
 
 import android.Manifest;
 import android.animation.Animator;

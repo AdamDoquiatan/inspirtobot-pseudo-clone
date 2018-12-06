@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Downloading Images</string>
+    <string name="button_text">Acquire Inspiration</string>
+    <string name="hal_content_description">HAL 9000</string>
+    <string name="image_content_description">Inspirational Image</string>
+    <string name="inspirobot_quote">Creating quotes gives me pleasure.</string>
+    <string name="save_message">Image Saved</string>
 </resources>
